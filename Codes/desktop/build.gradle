@@ -45,3 +45,11 @@ task dist(type: Jar) {
 dist.dependsOn classes
 
 eclipse.project.name = appName + "-desktop"
+
+task wrapper(type: Wrapper){
+    gradleVersion = '8.0'
+}
+
+task prepareKotlinBuildScriptModel {
+
+}
